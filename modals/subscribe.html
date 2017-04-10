@@ -1,0 +1,166 @@
+<!-- contact form -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+        <h2 class="modal-title">ubscription</h2>
+      </div>
+      <div class="modal-body">
+        <form id="subscribe">
+        <!--
+      	  <div class="col-xs-1 col-sm-3">
+  	    	  <label for="quantity" class="control-label">Quantity:</label>
+      	    </div>
+      	    <div class="col-xs-11 col-sm-5">
+      	    	<label for="quantity" class="control-label">Box Type:</label>
+      	    </div>
+      	    <div class="col-xs-12 col-sm-4">
+      	    	<label for="quantity" class="control-label">Box Size:</label>
+      	    </div>
+    	<div class="form-group">
+      	  <div class="col-xs-1 col-sm-2">
+      	  	  <input type="number" class="form-control" id="quantityFriends" value="0">
+      	  	</div>
+      	  	<div class="col-xs-1 col-sm-1"></div>
+  	      <div class="col-xs-11 col-sm-5">
+  	      	<label for="quantity" class="control-label">Snack Friends</label>
+  	      </div>
+      	  <div class="col-xs-12 col-sm-4">
+      	    <div class="form-group">
+	          <label class="radio-inline">
+	            <input type="radio" name="inlineRadioOptionsFriends" id="optionFriends" value="friendsS"> S
+	          </label>
+	          <label class="radio-inline">
+	            <input type="radio" name="inlineRadioOptionsFriends" id="optionFriends" value="friendsM" checked="checked"> M
+	          </label>
+	          <label class="radio-inline">
+	            <input type="radio" name="inlineRadioOptionsFriends" id="optionFriends" value="friendsL"> L
+	          </label>
+	  	    </div>
+	      </div>
+        </div>
+        <div class="form-group">
+        	  <div class="col-xs-1 col-sm-2">
+        	  	  <input type="number" class="form-control" id="quantityLovers" value="1">
+        	  	</div>
+        	  	<div class="col-xs-1 col-sm-1"></div>
+            <div class="col-xs-11 col-sm-5">
+            	<label for="quantity" class="control-label">Snack Lovers</label>
+            </div>
+        	  <div class="col-xs-12 col-sm-4">
+        	    <div class="form-group">
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptionsLovers" id="optionLovers" value="loversS"> S
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptionsLovers" id="optionLovers" value="loversM" checked="checked"> M
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptionsLovers" id="optionLovers" value="loversL"> L
+              </label>
+        	    </div>
+          </div>
+        </div>
+        <div class="form-group">
+        	  <div class="col-xs-1 col-sm-2">
+        	  	  <input type="number" class="form-control" id="quantityEnthusiasts" value="0">
+        	  	</div>
+    	  	<div class="col-xs-1 col-sm-1"></div>
+            <div class="col-xs-11 col-sm-5">
+            	<label for="quantity" class="control-label">Snack Enthusiasts</label>
+            </div>
+        	  <div class="col-xs-12 col-sm-4">
+        	    <div class="form-group">
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptionsEnthusiasts" id="optionEnthusiasts" value="enthusiastsS"> S
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptionsEnthusiasts" id="optionEnthusiasts" value="enthusiastsM" checked="checked"> M
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptionsEnthusiasts	" id="optionEnthusiasts" value="enthusiastsL"> L
+              </label>
+        	    </div>
+          </div>
+        </div>
+        -->
+        <div class="form-group col-xs-12 col-sm-12">
+        	<label for="recipient-box" class="control-label">Box Type and Size:</label>
+        	<select id="box" name="box" class="selectpicker" data-width="100%">
+        	  <optgroup label="Snack Friends">
+        	    <option value="friendsSmall">Snack Friends – Small (222 CHF)</option>
+        	    <option value="friendsMedium">Snack Friends – Medium (333 CHF)</option>
+        	    <option value="friendsLarge">Snack Friends – Large (444 CHF)</option>
+        	  </optgroup>
+        	  <optgroup label="Snack Lovers">
+        	    <option value="loversSmall">Snack Lovers – Small (222 CHF)</option>
+                <option value="loversMedium" selected="selected">Snack Lovers – Medium (333 CHF)</option>
+                <option value="loversLarge">Snack Lovers – Large (444 CHF)</option>
+        	  </optgroup>
+        	  <optgroup label="Snack Enthusiasts">
+        	    <option value="enthusiastsSmall">Snack Enthusiasts - Small (222 CHF)</option>
+        	    <option value="enthusiastsMedium">Snack Enthusiasts – Medium (333 CHF)</option>
+        	    <option value="enthusiastsLarge">Snack Enthusiasts – Large (444 CHF)</option>
+        	  </optgroup>
+        	</select>
+        </div>
+        <div class="form-group col-xs-12 col-sm-6">
+          <label for="recipient-freq" class="control-label">Frequency:</label>
+          <select id="freq" name="freq" class="selectpicker" data-width="100%">
+            <option>every week</option>
+            <option selected="selected">every two weeks</option>
+            <option>every month</option>
+          </select>
+        </div>
+        <div class="form-group col-xs-12 col-sm-6">
+          <label for="recipient-start" class="control-label">First Delivery:</label>
+          <input type="text" class="form-control" id="start" value="DD.MM.YYYY">
+        </div>
+        
+        <div class="clearfix"></div>
+	      <div class="form-group col-xs-12 col-sm-6">
+	        <label for="recipient-name" class="control-label">Firstname:</label>
+	        <input type="text" class="form-control" id="first">
+	      </div>
+	      <div class="form-group col-xs-12 col-sm-6">
+	        <label for="recipient-name" class="control-label">Last Name:</label>
+	        <input type="text" class="form-control" id="last">
+	      </div>
+	      <div class="form-group col-xs-12">
+	        <label for="recipient-address" class="control-label">Address:</label>
+	        <input type="text" class="form-control" id="address">
+	      </div>
+	      <div class="form-group col-xs-12 col-sm-3">
+	        <label for="recipient-zip" class="control-label">Zipcode:</label>
+	        <input type="number" class="form-control" id="zipcode">
+	      </div>
+	      <div class="form-group col-xs-12 col-sm-9">
+	        <label for="recipient-city" class="control-label">City:</label>
+	        <input type="text" class="form-control" id="city">
+	      </div>
+	      <div class="form-group col-xs-12 col-sm-6">
+	        <label for="recipient-mail" class="control-label">Email:</label>
+	        <input type="email" class="form-control" id="email">
+	      </div>
+	      <div class="form-group col-xs-12 col-sm-6">
+	        <label for="recipient-mail2" class="control-label">Confirm Email:</label>
+	        <input type="email" class="form-control" id="email2">
+	      </div>
+	      
+	      <div class="form-group col-xs-12">
+	        <label for="message-text" class="control-label">Comment:</label>
+	        <textarea style="resize: none; height: 80px;" class="form-control" id="comment"></textarea>
+	      </div>
+	      <div class="clearfix"></div>
+	    </form>
+      </div>
+      <div class="modal-footer">
+        <div class="info col-xs-12"></div>
+      	<div class="col-xs-12"><input type="checkbox" id="agb" name="agb" value="accepted" /> <span>I agree to the <a href="http://" target="_blank">AGB</a> of snaXs. </span></div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" id="send-subscription">Subscribe</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
